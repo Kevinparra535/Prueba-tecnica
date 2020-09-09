@@ -1,0 +1,216 @@
+@import "../tokens/colors";
+@import "../tokens/spacings";
+@import "../tokens/typos";
+.info {
+  &__thirdCol {
+    padding: $space_x3 0;
+    .thirCol__reviews {
+      display: flex;
+      align-items: center;
+      margin-bottom: $space_x3;
+      small {
+        text-align: center;
+        font-weight: $light;
+        color: get-opacity($color-oscuro, 1);
+        @include font-size($p);
+      }
+      &--users {
+        padding: $space_x2;
+        display: flex;
+        list-style: none;
+        margin: 0;
+        img {
+          margin: 0 -5px;
+          width: 60px;
+          height: 60px;
+          border: 2px solid $color-bg-claro;
+          border-radius: $space_half;
+          object-fit: cover;
+        }
+        p {
+          padding-top: $space_x2;
+          margin: 0 -5px;
+          width: 60px;
+          height: 60px;
+          text-align: center;
+          border: 2px solid $color-bg-claro;
+          border-radius: $space_half;
+          color: $color-claro;
+          background-color: $color-secundario;
+        }
+      }
+    }
+    .thirCol__card {
+      @include imageCard;
+      &--img {
+        margin-bottom: $space;
+        height: 300px;
+      }
+      &--text {
+        margin-top: -155px !important;
+        color: $color-oscuro;
+        @include font-size($p);
+        img {
+          width: 20px;
+        }
+      }
+    }
+    .thirCol__cards {
+      &--img {
+        margin-bottom: $space;
+        height: 300px;
+      }
+      &--text {
+        margin-top: -155px !important;
+        @include font-size($p);
+        img {
+          width: 20px;
+        }
+      }
+      @include imageCard;
+    }
+  }
+  @include media(tablet) {
+    &__thirdCol {
+      padding: $space_x3 $space;
+      .thirCol__reviews {
+        display: flex;
+        align-items: center;
+        margin-bottom: $space_x3;
+        height: 50px;
+        small {
+          text-align: center;
+          font-weight: $light;
+          color: get-opacity($color-oscuro, 0.6);
+          @include font-size($h1);
+        }
+        &--users {
+          padding: $space_x2;
+          display: flex;
+          list-style: none;
+          margin: 0;
+          img {
+            margin: 0 -5px;
+            width: 60px;
+            height: 60px;
+            border: 2px solid $color-bg-claro;
+            border-radius: $space_half;
+            object-fit: cover;
+          }
+          p {
+            padding-top: $space_x2;
+            margin: 0 -5px;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            border: 2px solid $color-bg-claro;
+            border-radius: $space_half;
+            color: $color-claro;
+            background-color: $color-secundario;
+          }
+        }
+      }
+      .thirCol__card {
+        @include imageCard;
+        &--img {
+          margin-bottom: $space;
+          height: 305px;
+        }
+        &--text {
+          margin-top: -155px !important;
+          color: $color-oscuro;
+          @include font-size($p);
+          img {
+            width: 20px;
+          }
+        }
+      }
+      .thirCol__cards {
+        &--img {
+          margin-bottom: $space;
+          height: 300px;
+        }
+        &--text {
+          margin-top: -155px !important;
+          @include font-size($p);
+          img {
+            width: 20px;
+          }
+        }
+        @include imageCard;
+      }
+    }
+  }
+  @include media(desktop-s) {
+    &__thirdCol {
+      padding: $space_x3 $space;
+      .thirCol__reviews {
+        display: flex;
+        align-items: center;
+        margin-bottom: $space_x3;
+        height: 45px;
+
+        small {
+          text-align: center;
+          font-weight: $light;
+          color: get-opacity($color-oscuro, 0.6);
+          @include font-size($p);
+        }
+        &--users {
+          padding: $space_x2;
+          display: flex;
+          list-style: none;
+          margin: 0;
+          img {
+            margin: 0 -5px;
+            width: 45px;
+            height: 45px;
+            border: 2px solid $color-bg-claro;
+            border-radius: $space_half;
+            object-fit: cover;
+          }
+          p {
+            padding-top: $space;
+            margin: 0 -5px;
+            width: 45px;
+            height: 45px;
+            text-align: center;
+            border: 2px solid $color-bg-claro;
+            border-radius: $space_half;
+            color: $color-claro;
+            background-color: $color-secundario;
+          }
+        }
+      }
+      .thirCol__card {
+        @include imageCard;
+        &--img {
+          margin-bottom: $space;
+          height: 145px;
+        }
+        &--text {
+          margin-top: -155px !important;
+          color: $color-oscuro;
+          @include font-size($p);
+          img {
+            width: 20px;
+          }
+        }
+      }
+      .thirCol__cards {
+        &--img {
+          margin-bottom: $space;
+          height: 145px;
+        }
+        &--text {
+          margin-top: -155px !important;
+          @include font-size($p);
+          img {
+            width: 20px;
+          }
+        }
+        @include imageCard;
+      }
+    }
+  }
+}

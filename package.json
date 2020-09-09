@@ -1,0 +1,17 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "thecnical test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Javascript",
+    "SCSS",
+    "HTML",
+    "Node"
+  ],
+  "author": "Kevin Parra <kevinparra535@gmail.com>",
+  "license": "MIT"
+}

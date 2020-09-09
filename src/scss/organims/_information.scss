@@ -1,0 +1,23 @@
+@import "../tokens/colors";
+@import "../tokens/spacings";
+@import "../tokens/typos";
+
+.info {
+  padding: $space_x3 $space;
+  width: 100%;
+  height: auto;
+  @include display-grid;
+  @include grid-template-columns(auto);
+  @include media(tablet) {
+    padding: $space_x3;
+    height: auto;
+    @include display-grid;
+    @include grid-template-columns(auto);
+  }
+  @include media(desktop-s) {
+    padding: $space_x3;
+    height: auto;
+    @include display-grid;
+    @include grid-template-columns(25% 25% 25% 25%);
+  }
+}

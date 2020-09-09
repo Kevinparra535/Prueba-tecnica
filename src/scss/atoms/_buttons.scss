@@ -1,0 +1,13 @@
+@import "../tokens/colors";
+@import "../tokens/spacings";
+@import "../tokens/typos";
+
+.callToAction {
+  border: none;
+  font-weight: $normal;
+  color: $color-primario;
+  background-color: get-opacity($color-secundario, 0.3) !important;
+  &:hover {
+    background-color: get-opacity($color-secundario, 0.5) !important;
+  }
+}

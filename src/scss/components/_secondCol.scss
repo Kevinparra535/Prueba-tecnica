@@ -1,0 +1,56 @@
+@import "../tokens/colors";
+@import "../tokens/spacings";
+@import "../tokens/typos";
+
+
+.info {
+  &__secondCol {
+    padding: $space_x3 0;
+    h2 {
+      margin-bottom: $space_x3;
+      text-align: center;
+      font-weight: $light;
+      @include font-size($h2);
+    }
+    .secondCol__card {
+      @include imageCard;
+      &--img {
+        height: 400px;
+      }
+    }
+  }
+  @include media(tablet) {
+    &__secondCol {
+      padding: $space_x3 $space;
+      h2 {
+        margin-bottom: $space_x3;
+        text-align: center;
+        font-weight: $light;
+        @include font-size($h2);
+      }
+      .secondCol__card {
+        @include imageCard;
+        &--img {
+          height: 500px;
+        }
+      }
+    }
+  }
+  @include media(desktop-s) {
+    &__secondCol {
+      padding: $space_x3 $space;
+      h2 {
+        margin-bottom: $space_x3;
+        text-align: center;
+        font-weight: $light;
+        @include font-size($h2);
+      }
+      .secondCol__card {
+        @include imageCard;
+        &--img {
+          height: 300px;
+        }
+      }
+    }
+  }
+}

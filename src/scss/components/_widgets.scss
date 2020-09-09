@@ -1,0 +1,59 @@
+@import "../tokens/colors";
+@import "../tokens/spacings";
+@import "../tokens/typos";
+
+.widget {
+  position: fixed;
+  z-index: 5;
+  top: 2%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: $space_x3;
+  border-top-right-radius: $space_x3;
+  color: $color-claro;
+  background-color: $color-primario;
+  @include font-size($h3);
+  img {
+    padding: $space;
+    width: 50px;
+    border-radius: $space_x3;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    background-color: $color-variacion;
+  }
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  @include media(desktop-s) {
+    position: fixed;
+    z-index: 5;
+    top: 10%;
+    width: 100px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: $space_x3;
+    border-top-right-radius: $space_x3;
+    text-align: center;
+    color: $color-claro;
+    background-color: $color-primario;
+    @include font-size($h1);
+    img {
+      padding: $space_x2 $space;
+      width: 100%;
+      height: 100px;
+      border-radius: $space_x3;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      background-color: $color-variacion;
+    }
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
+  }
+}
