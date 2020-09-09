@@ -49,21 +49,23 @@
 	}
 	@include media(desktop-s) {
 		img {
-			margin-left: $space_x2;
-			width: 70px;
+			margin-left: $space;
+			width: 50px;
 		}
 		&--text p {
 			margin: 0;
 			@include font-size($p);
 		}
 		&--grades {
-			padding: $space_x3 $space;
+			padding: $space_x3 $space_half;
 			margin-top: 0;
-			width: 150px;
+			width: 140px;
+			height: 100%;
 			text-align: center;
 			border-radius: $space_x2;
 			color: $color-claro;
 			background-color: $color-primario;
+			@include font-size($p);
 		}
 	}
 	@include media(desktop-l) {

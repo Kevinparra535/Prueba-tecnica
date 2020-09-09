@@ -148,7 +148,7 @@ const Home = async () => {
       </div>
       <div class="fourCol__card">
         <img src="../src/images/icons/info--cloud.svg" alt="Icon" />
-        <div class="fourCol__card--text">12°</div>
+        <div class="fourCol__card--text">12.50°</div>
         <div class="fourCol__card--sities">
           <p>Paris</p>
           <small>Francia</small>
