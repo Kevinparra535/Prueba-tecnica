@@ -1,5 +1,5 @@
 const bgtAPI =
-  "https://api.openweathermap.org/data/2.5/weather?id=3688689&appid=bc32b3f8b0e585a4ff11b0fd71de1591&lang=es&units=metric";
+  "https://api.openweathermap.org/data/2.5/forecast/?id=3688689&appid=bc32b3f8b0e585a4ff11b0fd71de1591&cnt=4&lang=es&units=metric";
 
 const getDataBgt = async () => {
   const apiURL = `${bgtAPI}`;
