@@ -17,7 +17,7 @@
       text-align: center;
       width: 100%;
       font-weight: $bolder;
-      color: $color-secundario;
+      color: $color-claro;
       @include font-size($h2);
       img {
         width: 30px;
@@ -47,7 +47,7 @@
         top: 15%;
         width: 100%;
         font-weight: $bolder;
-        color: $color-secundario;
+        color: $color-claro;
         @include font-size($h1);
         img {
           width: 40px;
@@ -76,14 +76,14 @@
         position: absolute;
         z-index: 2;
         top: 15%;
-        left: 15%;
+        left: 10%;
         text-align: left;
         width: 40%;
         font-weight: $bolder;
-        color: $color-secundario;
-        @include font-size($h2);
+        color: $color-claro;
+        @include font-size($h1);
         img {
-          width: 30px;
+          display: none;
         }
         p {
           margin: 0;
@@ -110,13 +110,13 @@
         position: absolute;
         z-index: 2;
         top: 15%;
-        left: 15%;
+        left: 8%;
         width: 40%;
         font-weight: $bolder;
-        color: $color-secundario;
-        @include font-size($h2);
+        color: $color-claro;
+        @include font-size($h1);
         img {
-          width: 30px;
+          display: none;
         }
         p {
           margin: 0;

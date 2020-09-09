@@ -49,6 +49,27 @@
 	}
 	@include media(desktop-s) {
 		img {
+			margin-left: $space;
+			width: 50px;
+		}
+		&--text p {
+			margin: 0;
+			@include font-size($p);
+		}
+		&--grades {
+			padding: $space_x3 $space_half;
+			margin-top: 0;
+			width: 140px;
+			height: 100%;
+			text-align: center;
+			border-radius: $space_x2;
+			color: $color-claro;
+			background-color: $color-primario;
+			@include font-size($p);
+		}
+	}
+	@include media(desktop-l) {
+		img {
 			margin-left: $space_x2;
 			width: 50px;
 		}
@@ -59,7 +80,7 @@
 			padding: $space_x3 $space;
 			margin-top: 0;
 
-			width: 85px;
+			width: 125px;
 			text-align: center;
 			border-radius: $space_x2;
 			color: $color-claro;

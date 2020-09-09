@@ -12,7 +12,7 @@
   border-top-right-radius: $space_x3;
   color: $color-claro;
   background-color: $color-primario;
-  @include font-size($h3);
+  @include font-size($p);
   img {
     padding: $space;
     width: 50px;
@@ -25,12 +25,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin: $space_half 0;
   }
   @include media(desktop-s) {
     position: fixed;
     z-index: 5;
-    top: 10%;
+    top: 15%;
     width: 100px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -39,7 +39,7 @@
     text-align: center;
     color: $color-claro;
     background-color: $color-primario;
-    @include font-size($h1);
+    @include font-size($h2);
     img {
       padding: $space_x2 $space;
       width: 100%;
