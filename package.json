@@ -1,17 +1,36 @@
 {
-  "name": "test",
+  "name": "gradiweb",
   "version": "1.0.0",
-  "description": "thecnical test",
+  "description": "Thecnical test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bogota": "node src/js/app.js",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kevinparra535/Prueba-tecnica.git"
   },
   "keywords": [
-    "Javascript",
-    "SCSS",
-    "HTML",
-    "Node"
+    "Javascript"
   ],
   "author": "Kevin Parra <kevinparra535@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kevinparra535/Prueba-tecnica/issues"
+  },
+  "homepage": "https://github.com/Kevinparra535/Prueba-tecnica#readme",
+  "dependencies": {
+    "copy-webpack-plugin": "^6.1.0",
+    "production": "0.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.4.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
 }

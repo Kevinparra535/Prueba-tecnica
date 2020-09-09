@@ -70,7 +70,7 @@
   @include media(desktop-s) {
     &__fourCol {
       padding: $space_x3 $space;
-      margin: -35vh 0;
+      margin-top: -35vh;
       .fourCol__card {
         position: relative;
         z-index: 5;
@@ -92,7 +92,73 @@
           display: flex;
           align-items: center;
           text-align: center;
-          @include font-size($h1);
+          @include font-size($h2);
+        }
+        &--sities {
+          padding: $space_x3 $space;
+          text-align: left;
+          border-left: 1px solid get-opacity($color-oscuro, 0.1);
+          color: $color-oscuro;
+          @include font-size($p);
+          p {
+            margin: 0;
+            font-weight: $medium;
+          }
+        }
+        &--details {
+          padding: $space 0;
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          color: get-opacity($color-oscuro, 0.5);
+          @include font-size(14px);
+          @include grid-column(1, 4);
+          @include grid-row(2, 2);
+        }
+      }
+      .fourCol__interaction {
+        padding: $space;
+        text-align: center;
+        background-color: $color-bg-claro;
+        border-radius: $space_x2;
+        border: 3px dashed get-opacity($color-oscuro, 0.1);
+        button {
+          @include botones;
+        }
+        img {
+          width: 100%;
+          height: 150px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  @include media(desktop-l) {
+    &__fourCol {
+      padding: $space_x3 $space;
+      margin-top: -30vh;
+      .fourCol__card {
+        position: relative;
+        z-index: 5;
+        margin-bottom: $space_x3;
+        width: 100%;
+        height: auto;
+        border-radius: $space_x2;
+        background-color: $color-bg-claro;
+        @include display-grid;
+        @include grid-template-columns(auto auto auto);
+        @include shadows;
+        img {
+          padding: $space_x2;
+          width: 100px;
+          border-radius: $space_x2;
+          background-color: get-opacity($color-oscuro, 0.2);
+        }
+        &--text {
+          display: flex;
+          align-items: center;
+          text-align: center;
+          @include font-size($h2);
         }
         &--sities {
           padding: $space_x3 $space;
