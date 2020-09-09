@@ -7,170 +7,19 @@
     <title>¿How is the weather today?</title>
   </head>
   <body>
-    <main class="main">
-      <div class="main__hero">
-        <div class="main__hero--time">
-          <p>
-            <img
-              src="../src/images/icons/hero__time--location.svg"
-              alt="Location"
-            />
-            City
-          </p>
-          <p>Time current</p>
-        </div>
-        <img
-          class="main__hero--img"
-          src="../src/images/main--hero.webp"
-          alt="Build Bogota"
-        />
-      </div>
+    <main class="Main">
+      <header class="Header" id="header"></header>
+      <section id="content">
+        <div class="loading"></div>
+      </section>
     </main>
-
-    <section class="info">
-      <div class="info__firstCol">
-        <h2><b>3 Days</b> Forecast</h2>
-        <div class="fcol__card">
-          <img src="../src/images/icons/info--cloud.svg" alt="Icon" />
-          <div class="fcol__card--text">
-            <p>Friday</p>
-            <small>Rain</small>
-          </div>
-
-          <div class="fcol__card--grades">32 / 23°</div>
-        </div>
-
-        <div class="fcol__card">
-          <img src="../src/images/icons/info--sun.svg" alt="Icon" />
-          <div class="fcol__card--text">
-            <p>Friday</p>
-            <small>Rain</small>
-          </div>
-
-          <div class="fcol__card--grades">34 / 24°</div>
-        </div>
-
-        <div class="fcol__card">
-          <img src="../src/images/icons/info--cloud.svg" alt="Icon" />
-          <div class="fcol__card--text">
-            <p>Friday</p>
-            <small>Rain</small>
-          </div>
-
-          <div class="fcol__card--grades">31 / 23°</div>
-        </div>
-      </div>
-
-      <div class="info__secondCol">
-        <h2><b>Places</b> to visit</h2>
-
-        <div class="seconCol__card">
-          <img
-            class="secondCol__card--img"
-            src="../src/images/secondCol--visits.webp"
-            alt="Good Location"
-          />
-          <div class="secondCol__card--text">
-            <p>
-              <img
-                src="../src/images/icons/sencondCol__text--icon.svg"
-                alt="icon"
-              />Amazing Street
-            </p>
-            <p>Singapure</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="info__thirdCol">
-        <div class="thirCol__reviews">
-          <small>+ Top Reviews</small>
-          <ul class="thirCol__reviews--users">
-            <li>
-              <img src="../src/images/thirdCol--subject (1).webp" alt="Users" />
-            </li>
-            <li>
-              <img src="../src/images/thirdCol--subject (2).webp" alt="Users" />
-            </li>
-            <li>
-              <img src="../src/images/thirdCol--subject (3).webp" alt="Users" />
-            </li>
-            <li><p>+8k</p></li>
-          </ul>
-        </div>
-        <div class="thirCol__card">
-          <img
-            class="thirCol__card--img"
-            src="../src/images/thirdCol--card (1).jpg"
-            alt="Good Location"
-          />
-          <div class="thirCol__card--text">
-            <p>
-              <img
-                src="../src/images/icons/sencondCol__text--icon.svg"
-                alt="icon"
-              />Amazing Street
-            </p>
-            <p>Sidney</p>
-          </div>
-        </div>
-        <div class="thirCol__cards">
-          <img
-            class="thirCol__cards--img"
-            src="../src/images/thirdCol--card (2).jpg"
-            alt="Good Location"
-          />
-          <div class="thirCol__cards--text">
-            <p>
-              <img
-                src="../src/images/icons/sencondCol__text--icon.svg"
-                alt="icon"
-              />Amazing Street
-            </p>
-            <p>Sidney</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="info__fourCol">
-        <div class="fourCol__card">
-          <img src="../src/images/icons/info--cloud.svg" alt="Icon" />
-          <div class="fourCol__card--text">29°</div>
-          <div class="fourCol__card--sities">
-            <p>Lyon</p>
-            <small>Francia</small>
-          </div>
-          <div class="fourCol__card--details">
-            <small>Humedicity 0.4%</small>
-            <small>Northwest</small>
-            <small>83km/h</small>
-          </div>
-        </div>
-        <div class="fourCol__card">
-          <img src="../src/images/icons/info--cloud.svg" alt="Icon" />
-          <div class="fourCol__card--text">12°</div>
-          <div class="fourCol__card--sities">
-            <p>Paris</p>
-            <small>Francia</small>
-          </div>
-          <div class="fourCol__card--details">
-            <small>Humedicity 0.4%</small>
-            <small>Northwest</small>
-            <small>83km/h</small>
-          </div>
-        </div>
-        <div class="fourCol__interaction">
-          <button class="fourCol__interaction--btn callToAction">
-            Add Loactions
-          </button>
-          <img src="../src/images/third--addLocation.webp" alt="Add Location" />
-        </div>
-      </div>
-    </section>
-
-    <div class="widget">
-      <img src="../src/images/icons/info--sun.svg" alt="Sunny">
-      <p>31°</p>
+    <div class="widget" id="widget">
     </div>
+    <footer>
+      <a href="mailto:kevinparra535@gmail.com">By: Kevin Parra</a>
+      <a href="https://kevin-parra-lopez.web.app/"
+        >Visit: Kevinparralopez.com</a
+      >
+    </footer>
   </body>
 </html>
