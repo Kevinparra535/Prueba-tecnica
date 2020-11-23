@@ -1,4 +1,4 @@
-# Prueba-tecnica
+# Open Weather
 
 ## Como funciona
 
